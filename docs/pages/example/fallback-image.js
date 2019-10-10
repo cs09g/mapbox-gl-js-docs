@@ -1,6 +1,6 @@
 /*---
 title: Use a fallback image
-description: Fallback to another image when a requested image is not available
+description: Fallback to another image when a requested image is not available.
 tags:
   - layers
 pathname: /mapbox-gl-js/example/fallback-image/
