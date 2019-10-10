@@ -145,6 +145,9 @@ export const styleSpecNavigation = [
                 title: 'Formatted'
             },
             {
+                title: 'Resolved Image'
+            },
+            {
                 title: 'Boolean'
             },
             {

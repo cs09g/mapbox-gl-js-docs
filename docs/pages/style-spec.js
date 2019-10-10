@@ -1348,6 +1348,23 @@ export default class extends React.Component {
                                     }`)}
                         </SectionH3>
 
+                        <SectionH3
+                            id="types-resolved-image"
+                            title="ResolvedImage"
+                        >
+                            <p>
+                                The <code>ResolvedImage</code> type represents
+                                an image which will be checked against the
+                                current style to see if it is available or not.
+                                This allows for complex image logic such as
+                                fallback and default images.
+                            </p>
+                            {highlightJSON(`
+                                    {
+                                        "icon-image": ["coalesce", ["image", "myImage"], ["image", "myFallbackImage"], "defaultImage"]
+                                    }`)}
+                        </SectionH3>
+
                         <SectionH3 id="types-string" title="String">
                             <p>
                                 A string is basically just text. In Mapbox
@@ -1355,7 +1372,7 @@ export default class extends React.Component {
                             </p>
                             {highlightJSON(`
                                     {
-                                        "icon-image": "marker"
+                                        "source": "mySource"
                                     }`)}
                         </SectionH3>
 
