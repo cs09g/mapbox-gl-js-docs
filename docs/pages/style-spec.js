@@ -1361,7 +1361,7 @@ export default class extends React.Component {
                             </p>
                             {highlightJSON(`
                                     {
-                                        "icon-image": ["coalesce", ["image", "myImage"], ["image", "myFallbackImage"], "defaultImage"]
+                                        "icon-image": ["coalesce", ["image", "myImage"], ["image", "myFallbackImage"]]
                                     }`)}
                         </SectionH3>
 
