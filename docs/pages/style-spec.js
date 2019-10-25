@@ -1349,19 +1349,23 @@ export default class extends React.Component {
                         </SectionH3>
 
                         <SectionH3
-                            id="types-resolved-image"
+                            id="types-resolvedImage"
                             title="ResolvedImage"
                         >
                             <p>
-                                The <code>ResolvedImage</code> type represents
-                                an image which will be checked against the
-                                current style to see if it is available or not.
-                                This allows for complex image logic such as
-                                fallback and default images.
+                                The <code>resolvedImage</code> type represents
+                                an icon or pattern. The resolvedImage is checked
+                                against the current map style to see if it is
+                                available to be rendered or not. This approach
+                                allows developers to define a series of images
+                                which the map can fall back to if previous
+                                images are not found, which cannot be achieved
+                                by providing, for example, `icon-image` with a
+                                plain string.
                             </p>
                             {highlightJSON(`
                                     {
-                                        "icon-image": ["coalesce", ["image", "myImage"], ["image", "myFallbackImage"]]
+                                        "icon-image": ["coalesce", ["image", "myImage"], ["image", "fallbackImage"]]
                                     }`)}
                         </SectionH3>
 
